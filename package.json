@@ -1,0 +1,17 @@
+{
+  "name": "organization-chart-2023",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "cds watch",
+    "openapi": "cds compile srv --service all -o docs --to openapi --openapi:diagram",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "robbymanis",
+  "license": "ISC",
+  "dependencies": {
+    "@sap/cds-dk": "^6.6.0",
+    "sqlite3": "^5.1.4"
+  }
+}
