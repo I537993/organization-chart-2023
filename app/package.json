@@ -27,6 +27,7 @@
         "karma-ui5": "^2.4.0",
         "rimraf": "^3.0.2",
         "ui5-middleware-livereload": "^0.7.0",
+        "prettier": "2.8.4",
         "wdio-chromedriver-service": "^7.3.2",
         "wdio-ui5-service": "^1.0.5"
     },
