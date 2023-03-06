@@ -13,5 +13,8 @@
   "dependencies": {
     "@sap/cds-dk": "^6.6.0",
     "sqlite3": "^5.1.4"
+  },
+  "devDependencies": {
+    "prettier": "2.8.4"
   }
 }
