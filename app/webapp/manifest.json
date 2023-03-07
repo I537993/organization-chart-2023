@@ -6,6 +6,15 @@
   "sap.app": {
     "id": "com.sap.robby.orgchart",
     "type": "application",
+    "dataSources": {
+      "myOdataService": {
+        "uri": "/employeeData/",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "4.0"
+        }
+      }
+    },
     "i18n": {
       "bundleUrl": "i18n/i18n.properties",
       "supportedLocales": [
@@ -73,6 +82,12 @@
       "cozy": true
     },
     "models": {
+      "": {
+        "dataSource": "myOdataService",
+        "settings": {
+          "synchronizationMode": "None"
+        }
+      },
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {

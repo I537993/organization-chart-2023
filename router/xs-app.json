@@ -1,0 +1,25 @@
+{
+    "welcomeFile": "index.html",
+    "authenticationMethod": "none",
+    "sessionTimeout": 60,
+    "routes": [
+        {
+            "source": "/employeeData/(.*)",
+            "target": "$1",
+            "destination": "employeeServices",
+            "authenticationType": "none",
+            "csrfProtection": false
+        },
+        {
+            "source": "^/ui/(.*)$",
+            "target": "$1",
+            "destination" : "web",
+            "authenticationType": "none",
+            "csrfProtection": false
+        },
+        {
+            "source": "^/(.*)$",
+            "localDir": "resources"
+        }
+    ]
+}

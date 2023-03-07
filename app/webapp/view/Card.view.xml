@@ -2,49 +2,23 @@
 	controllerName="com.sap.robby.orgchart.controller.Card"
 	displayBlock="true"
 	xmlns="sap.m"
-    xmlns:f="sap.f"
-    xmlns:g="sap.ui.layout.cssgrid"
 	xmlns:mvc="sap.ui.core.mvc">
-    <f:GridList>
-        <f:customLayout>
-            <g:GridBasicLayout 
-            gridTemplateColumns="1fr 1fr 1fr">
-
-            </g:GridBasicLayout>
-        </f:customLayout>
-        <f:GridListItem>
             <QuickViewCard
                 id="quickViewCard"
                 navigate=".onNavigate"
                 afterNavigate=".onAfterNavigate">
                 <QuickViewPage
                     pageId="{pageId}"
-                    header="{header}"
-                    title="{title}"
+                    header="header"
+                    title="Robby Manis"
                     titleUrl="{titleUrl}"
-                    description="{description}"
-                    groups="{
-                        path: 'groups',
-                        templateShareable: true
-                    }">
+                    description="CoE NA Cloud Technology">
                     <avatar>
                         <Avatar
                             src="{icon}"
                             displayShape="{displayShape}"
                         />
                     </avatar>
-                    <QuickViewGroup heading="{heading}" elements="{ path: 'elements', templateShareable: true }">
-                        <QuickViewGroupElement
-                            label="{label}"
-                            value="{value}"
-                            url="{url}"
-                            type="{elementType}"
-                            pageLinkId="{pageLinkId}"
-                            emailSubject="{emailSubject}"
-                            target="{target}" />
-                    </QuickViewGroup>
                 </QuickViewPage>
             </QuickViewCard>
-        </f:GridListItem>
-    </f:GridList>
 </mvc:View>
