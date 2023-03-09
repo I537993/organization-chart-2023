@@ -5,13 +5,12 @@
 	xmlns:mvc="sap.ui.core.mvc">
 	<Page
 		id="page"
-		title="{i18n>title}">
+		title="{i18n>title}"
+		enableScrolling="false">
 		<content>
 			<!--<mvc:XMLView viewName="com.sap.robby.orgchart.view.Card"/>-->
-			<HBox justifyContent="SpaceAround">
-				<VBox ><mvc:XMLView viewName="com.sap.robby.orgchart.view.Card"/></VBox>
-				<VBox ><mvc:XMLView viewName="com.sap.robby.orgchart.view.Card"/></VBox>
-				<VBox ><mvc:XMLView viewName="com.sap.robby.orgchart.view.Card"/></VBox>
+			<HBox fitContainer="true" justifyContent="SpaceAround">
+				<VBox justifyContent="SpaceAround" items="{/Us}"><mvc:XMLView viewName="com.sap.robby.orgchart.view.Card"/></VBox>
 			</HBox>
 		</content>
 	</Page>

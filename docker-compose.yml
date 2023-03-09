@@ -9,7 +9,7 @@ services:
       - PGID=1000
       - TZ=Etc/UTC
     ports:
-      - 3000:3000
+      - 7000:3000
     restart: unless-stopped
     volumes: 
       - type: bind

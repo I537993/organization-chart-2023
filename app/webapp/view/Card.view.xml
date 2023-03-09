@@ -4,21 +4,24 @@
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc">
             <QuickViewCard
-                id="quickViewCard"
                 navigate=".onNavigate"
                 afterNavigate=".onAfterNavigate">
                 <QuickViewPage
-                    pageId="{pageId}"
+                    pageId="{ID}"
                     header="header"
-                    title="Robby Manis"
-                    titleUrl="{titleUrl}"
+                    title="{firstname} {lastname}"
+                    titleUrl=""
                     description="CoE NA Cloud Technology">
                     <avatar>
                         <Avatar
-                            src="{icon}"
-                            displayShape="{displayShape}"
                         />
                     </avatar>
                 </QuickViewPage>
+                <QuickViewGroup
+                heading="Teams"
+                elements="{
+                    path: '{ID}/managing',
+                    templateShareable: false
+                }"
             </QuickViewCard>
 </mvc:View>
