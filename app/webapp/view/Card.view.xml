@@ -5,19 +5,22 @@
 	xmlns:mvc="sap.ui.core.mvc">
             <QuickViewCard
                 navigate=".onNavigate"
-                afterNavigate=".onAfterNavigate">
+                afterNavigate=".onAfterNavigate"
+                pages='{/Us}'
+                >
+                
                 <QuickViewPage
                     pageId="{ID}"
                     header="header"
                     title="{firstname} {lastname}"
                     titleUrl=""
-                    description="Cloud Technology">
+                    description="{company}">
                     <avatar>
                         <Avatar
                         />
                     </avatar>
                     <QuickViewGroup elements='{members}' heading='Team Leads'>
-                        <QuickViewGroupElement label='Business Technology Platform' value='{firstname} {lastname}'/>
+                        <QuickViewGroupElement type='pageLink' pageLinkId='{ID}' label='{company}' value='{firstname} {lastname}'/>
                     </QuickViewGroup>
                 </QuickViewPage>
             </QuickViewCard>

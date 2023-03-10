@@ -86,6 +86,7 @@
         "dataSource": "myOdataService",
         "settings": {
           "synchronizationMode": "None",
+          "operationMode" : "Server",
           "autoExpandSelect": true
         }
       },

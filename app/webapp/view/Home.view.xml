@@ -10,7 +10,16 @@
 		<content>
 			<!--<mvc:XMLView viewName="com.sap.robby.orgchart.view.Card"/>-->
 			<HBox fitContainer="true" justifyContent="SpaceAround">
-				<VBox justifyContent="SpaceAround" items="{/Us}"><mvc:XMLView viewName="com.sap.robby.orgchart.view.Card"/></VBox>
+				<VBox justifyContent="SpaceAround" 
+				items=
+				"{
+					path : '/Us', 
+					parameters : 
+					{
+						$filter : 'manager_ID eq null'
+					}
+				}">
+				<mvc:XMLView viewName="com.sap.robby.orgchart.view.Card"/></VBox>
 			</HBox>
 		</content>
 	</Page>
