@@ -13,5 +13,5 @@ services:
     restart: unless-stopped
     volumes: 
       - type: bind
-        source: C:\SAPDevelop\organization-chart-2023
+        source: .
         target: /opt/organization-chart-2023

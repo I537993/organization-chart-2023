@@ -11,17 +11,14 @@
                     header="header"
                     title="{firstname} {lastname}"
                     titleUrl=""
-                    description="CoE NA Cloud Technology">
+                    description="Cloud Technology">
                     <avatar>
                         <Avatar
                         />
                     </avatar>
+                    <QuickViewGroup elements='{members}' heading='Team Leads'>
+                        <QuickViewGroupElement label='Business Technology Platform' value='{firstname} {lastname}'/>
+                    </QuickViewGroup>
                 </QuickViewPage>
-                <QuickViewGroup
-                heading="Teams"
-                elements="{
-                    path: '{ID}/managing',
-                    templateShareable: false
-                }"
             </QuickViewCard>
 </mvc:View>

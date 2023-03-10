@@ -26,3 +26,6 @@ GET http://localhost:4004/user/Us/fec7fcc1-ad49-4218-95d1-07f34a70d62b/manager H
 
 ###
 GET http://localhost:4004/user/Us/dc36f8e6-7056-47b3-ac4e-4a9e487fc817/members HTTP/1.1
+
+###
+GET http://localhost:4004/user/Us/dc36f8e6-7056-47b3-ac4e-4a9e487fc817 HTTP/1.1

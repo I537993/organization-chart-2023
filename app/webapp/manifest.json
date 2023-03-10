@@ -85,7 +85,8 @@
       "": {
         "dataSource": "myOdataService",
         "settings": {
-          "synchronizationMode": "None"
+          "synchronizationMode": "None",
+          "autoExpandSelect": true
         }
       },
       "i18n": {
