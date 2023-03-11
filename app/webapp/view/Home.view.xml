@@ -1,26 +1,27 @@
 <mvc:View
-	controllerName="com.sap.robby.orgchart.controller.Home"
-	displayBlock="true"
-	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc">
-	<Page
-		id="page"
-		title="{i18n>title}"
-		enableScrolling="false">
-		<content>
-			<!--<mvc:XMLView viewName="com.sap.robby.orgchart.view.Card"/>-->
-			<HBox fitContainer="true" justifyContent="SpaceAround">
-				<VBox justifyContent="SpaceAround" 
-				items=
-				"{
+  controllerName="com.sap.robby.orgchart.controller.Home"
+  displayBlock="true"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc"
+>
+  <Page id="page" title="{i18n>title}" enableScrolling="false">
+    <content>
+      <!--<mvc:XMLView viewName="com.sap.robby.orgchart.view.Card"/>-->
+      <HBox fitContainer="true" justifyContent="SpaceAround">
+        <VBox
+          justifyContent="SpaceAround"
+          items="{
 					path : '/Us', 
+					templateShareable: true,
 					parameters : 
 					{
 						$filter : 'manager_ID eq null'
 					}
-				}">
-				<mvc:XMLView viewName="com.sap.robby.orgchart.view.Card"/></VBox>
-			</HBox>
-		</content>
-	</Page>
+				}"
+        >
+          <mvc:XMLView viewName="com.sap.robby.orgchart.view.Card" />
+        </VBox>
+      </HBox>
+    </content>
+  </Page>
 </mvc:View>

@@ -7,6 +7,7 @@ entity People {
         company   : String;
         title     : String;
         firstname : String;
+        email : String;
         lastname  : String;
         picture   : LargeBinary @Core.MediaType: 'image/png';
 }
