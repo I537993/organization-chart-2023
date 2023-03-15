@@ -12,6 +12,7 @@
     press='.onClick'
     id='quickViewCard'
     pages="{path: '/Us', templateShareable: true}"
+    navigate=".navigate"
     afterNavigate='.afterNavigate'
   >
     <QuickViewPage
@@ -20,21 +21,14 @@
       title="{firstname} {lastname}"
       description="{company}"
     >
-      <customData>
-        <core:CustomData key='manager_ID' value='{manager_ID}' />
-      </customData>
       <avatar>
-        <Avatar />
+        <Avatar src='{picture}' />
       </avatar>
-      <QuickViewGroup
-        elements="{path: 'members', templateShareable: true}"
-        heading='Contact'
-      >
+      <QuickViewGroup heading='Contact'>
         <QuickViewGroupElement type='email' label='email' value='email' />
       </QuickViewGroup>
       <QuickViewGroup
-        visible="true"
-        elements="{path: 'members', templateShareable: true}"
+        elements="{path: 'members', templateShareable: false}"
         heading='Team Leads'
       >
         <QuickViewGroupElement
@@ -45,5 +39,8 @@
         />
       </QuickViewGroup>
     </QuickViewPage>
+    <r:content>
+      <Button />
+    </r:content>
   </r:QuickViewCardPlus>
 </mvc:View>

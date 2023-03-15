@@ -5,6 +5,9 @@
   xmlns:mvc="sap.ui.core.mvc"
 >
   <Page id="page" title="{i18n>title}" enableScrolling="false">
+    <headerContent>
+      <SearchField />
+    </headerContent>
     <content>
       <!--<mvc:XMLView viewName="com.sap.robby.orgchart.view.Card"/>-->
       <HBox fitContainer="true" justifyContent="SpaceAround">
@@ -12,7 +15,7 @@
           justifyContent="SpaceAround"
           items="{
 					path : '/Us', 
-					templateShareable: true,
+					templateShareable: false,
 					parameters : 
 					{
 						$filter : 'manager_ID eq null'
@@ -23,5 +26,16 @@
         </VBox>
       </HBox>
     </content>
+    <footer>
+      <Bar design='footer' translucent='true'>
+        <contentMiddle>
+          <Button
+            icon='sap-icon://sap-logo-shape'
+            type='Transparent'
+            text='SAP'
+          />
+        </contentMiddle>
+      </Bar>
+    </footer>
   </Page>
 </mvc:View>
