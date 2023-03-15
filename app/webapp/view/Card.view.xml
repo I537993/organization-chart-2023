@@ -21,9 +21,6 @@
       title="{firstname} {lastname}"
       description="{company}"
     >
-      <customData>
-        <core:CustomData key='manager_ID' value='{manager_ID}' />
-      </customData>
       <avatar>
         <Avatar src='{picture}' />
       </avatar>
@@ -42,5 +39,8 @@
         />
       </QuickViewGroup>
     </QuickViewPage>
+    <r:content>
+      <Button />
+    </r:content>
   </r:QuickViewCardPlus>
 </mvc:View>
