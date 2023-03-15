@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/robbymanis/organization-chart-2023/badge)](https://www.codefactor.io/repository/github/robbymanis/organization-chart-2023)
+
 Start entity and type names with capital letters
 Use plural form for entities - for example, Authors
 Use singular form for types - for example, Genre
