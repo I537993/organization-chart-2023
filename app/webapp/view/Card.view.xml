@@ -39,8 +39,5 @@
         />
       </QuickViewGroup>
     </QuickViewPage>
-    <r:content>
-      <Button />
-    </r:content>
   </r:QuickViewCardPlus>
 </mvc:View>
