@@ -17,10 +17,13 @@
 
             </infoToolbar>
             <columns>
-                <Column title="something"></Column>
+                <Column>
+                    <Text text="something"></Text>
+                </Column>
             </columns>
             <items>
-
+                <ColumnListItem>
+                <Text text="something"></Text></ColumnListItem>
             </items>
         </Table>
     </content>
