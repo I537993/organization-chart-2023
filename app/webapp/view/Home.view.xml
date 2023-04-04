@@ -7,6 +7,7 @@
   <Page id="page" title="{i18n>title}" enableScrolling="true">
     <headerContent>
       <SearchField />
+      <Button text="admin" press="goToAdmin"></Button>
     </headerContent>
     <content>
       <!--Note about fit container property of HBox

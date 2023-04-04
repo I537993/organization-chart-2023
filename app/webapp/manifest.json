@@ -86,7 +86,7 @@
         "dataSource": "myOdataService",
         "settings": {
           "synchronizationMode": "None",
-          "operationMode" : "Server",
+          "operationMode": "Server",
           "autoExpandSelect": true
         }
       },
@@ -124,12 +124,25 @@
           "target": [
             "home"
           ]
+        },
+        {
+          "pattern": "admin",
+          "name": "admin",
+          "target": [
+            "admin"
+          ]
         }
       ],
       "targets": {
         "home": {
           "viewName": "Home",
           "viewId": "home",
+          "viewLevel": 1,
+          "title": "{i18n>title}"
+        },
+        "admin": {
+          "viewName": "Admin",
+          "viewId": "admin",
           "viewLevel": 1,
           "title": "{i18n>title}"
         }

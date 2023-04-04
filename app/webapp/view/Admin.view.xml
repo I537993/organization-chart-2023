@@ -1,0 +1,39 @@
+<mvc:View
+  controllerName="com.sap.robby.orgchart.controller.Admin"
+  displayBlock="true"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc"
+>
+  <Page id="page" title="{i18n>title}" enableScrolling="true">
+    <headerContent>
+        <Button text="onnavBack" press="onNavBack"></Button>
+    </headerContent>
+    <content>
+        <Table alternateRowColors="true" >
+            <headerToolbar>
+
+            </headerToolbar>
+            <infoToolbar>
+
+            </infoToolbar>
+            <columns>
+                <Column title="something"></Column>
+            </columns>
+            <items>
+
+            </items>
+        </Table>
+    </content>
+    <footer>
+      <Bar design="Footer">
+        <contentMiddle>
+          <Button
+            icon="sap-icon://sap-logo-shape"
+            type="Transparent"
+            text="SAP"
+          />
+        </contentMiddle>
+      </Bar>
+    </footer>
+  </Page>
+</mvc:View>

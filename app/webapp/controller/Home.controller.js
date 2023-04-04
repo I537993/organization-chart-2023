@@ -10,6 +10,10 @@ sap.ui.define([
 
 		onInit: function () {
 
+		},
+
+		goToAdmin: function () {
+			this.getOwnerComponent().getRouter().navTo('admin')
 		}
 	});
 });
