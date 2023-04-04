@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "watch": "cds watch",
+    "start": "cds run",
+    "sqlite": "cds deploy --to sqlite",
     "openapi": "cds compile srv --service all -o docs --to openapi --openapi:diagram",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,6 +16,15 @@
     "@sap/cds-dk": "^6.6.0",
     "sqlite3": "^5.1.4"
   },
-  "devDependencies": {
+  "devDependencies": {},
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "database": "db.sqlite"
+        }
+      }
+    }
   }
 }

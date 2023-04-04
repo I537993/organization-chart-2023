@@ -4,13 +4,17 @@
   xmlns="sap.m"
   xmlns:mvc="sap.ui.core.mvc"
 >
-  <Page id="page" title="{i18n>title}" enableScrolling="false">
+  <Page id="page" title="{i18n>title}" enableScrolling="true">
     <headerContent>
       <SearchField />
     </headerContent>
     <content>
-      <!--<mvc:XMLView viewName="com.sap.robby.orgchart.view.Card"/>-->
-      <HBox fitContainer="true" justifyContent="SpaceAround">
+      <!--Note about fit container property of HBox
+         Determines whether the sap.m.FlexBox will be sized to completely 
+        fill its container. If the sap.m.FlexBox is inserted into a Page, 
+        the property 'enableScrolling' of the Page needs to be set to 
+        'false' for the FlexBox to fit the entire viewport. -->
+      <HBox wrap="Wrap" fitContainer="true" justifyContent="SpaceAround">
         <VBox
           justifyContent="SpaceAround"
           items="{
@@ -27,12 +31,12 @@
       </HBox>
     </content>
     <footer>
-      <Bar design='footer' translucent='true'>
+      <Bar design="Footer">
         <contentMiddle>
           <Button
-            icon='sap-icon://sap-logo-shape'
-            type='Transparent'
-            text='SAP'
+            icon="sap-icon://sap-logo-shape"
+            type="Transparent"
+            text="SAP"
           />
         </contentMiddle>
       </Bar>

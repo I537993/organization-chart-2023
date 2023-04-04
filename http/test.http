@@ -17,6 +17,18 @@ Content-Type: application/json
 }
 
 ###
+POST http://localhost:4004/user/Us HTTP/1.1
+Content-Type: application/json
+
+{
+  "isLead": false,
+  "company": "SAP",
+  "title": "Senior Max Attention Engineer",
+  "firstname": "Haibo",
+  "lastname": "Haung"
+}
+
+###
 PATCH http://localhost:4004/user/Us/fec7fcc1-ad49-4218-95d1-07f34a70d62b HTTP/1.1
 Content-Type: application/json
 
