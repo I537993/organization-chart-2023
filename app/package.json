@@ -6,6 +6,8 @@
     "scripts": {
         "start": "ui5 serve -o /index.html",
         "prettier-watch": "npx onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}",
+        "prettier-check": "prettier --check 'webapp/view' 'webapp/controller' ",
+        "prettier": "prettier --write 'webapp/view' 'webapp/controller' ",
         "lint": "eslint webapp",
         "karma": "karma start",
         "karma-ci": "karma start karma-ci.conf.js",

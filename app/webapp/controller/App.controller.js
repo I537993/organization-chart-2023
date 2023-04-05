@@ -1,15 +1,12 @@
-sap.ui.define([
-	"sap/ui/core/mvc/Controller",
-	"com/sap/robby/orgchart/model/formatter"
-], function(Controller, formatter) {
-	"use strict";
+sap.ui.define(
+  ["sap/ui/core/mvc/Controller", "com/sap/robby/orgchart/model/formatter"],
+  function (Controller, formatter) {
+    "use strict";
 
-	return Controller.extend("com.sap.robby.orgchart.controller.App", {
+    return Controller.extend("com.sap.robby.orgchart.controller.App", {
+      formatter: formatter,
 
-		formatter: formatter,
-
-		onInit: function () {
-
-		}
-	});
-});
+      onInit: function () {},
+    });
+  }
+);

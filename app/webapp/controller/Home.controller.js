@@ -1,19 +1,16 @@
-sap.ui.define([
-	"sap/ui/core/mvc/Controller",
-	"../model/formatter"
-], function(Controller, formatter) {
-	"use strict";
+sap.ui.define(
+  ["sap/ui/core/mvc/Controller", "../model/formatter"],
+  function (Controller, formatter) {
+    "use strict";
 
-	return Controller.extend("com.sap.robby.orgchart.controller.Home", {
+    return Controller.extend("com.sap.robby.orgchart.controller.Home", {
+      formatter: formatter,
 
-		formatter: formatter,
+      onInit: function () {},
 
-		onInit: function () {
-
-		},
-
-		goToAdmin: function () {
-			this.getOwnerComponent().getRouter().navTo('admin')
-		}
-	});
-});
+      goToAdmin: function () {
+        this.getOwnerComponent().getRouter().navTo("admin");
+      },
+    });
+  }
+);

@@ -8,6 +8,7 @@ entity People {
         title     : String;
         firstname : String;
         email     : String;
+        phone     : String;
         lastname  : String;
         picture   : LargeBinary @Core.MediaType: 'image/png';
 }

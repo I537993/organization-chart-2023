@@ -6,26 +6,38 @@
 >
   <Page id="page" title="{i18n>title}" enableScrolling="true">
     <headerContent>
-        <Button text="onnavBack" press="onNavBack"></Button>
+      <Button text="onnavBack" press="onNavBack" />
     </headerContent>
     <content>
-        <Table alternateRowColors="true" >
-            <headerToolbar>
-
-            </headerToolbar>
-            <infoToolbar>
-
-            </infoToolbar>
-            <columns>
-                <Column>
-                    <Text text="something"></Text>
-                </Column>
-            </columns>
-            <items>
-                <ColumnListItem>
-                <Text text="something"></Text></ColumnListItem>
-            </items>
-        </Table>
+      <Table alternateRowColors="true" items="{path : '/Us'}">
+        <headerToolbar />
+        <infoToolbar />
+        <columns>
+          <Column>
+            <Text text="Name" />
+          </Column>
+          <Column>
+            <Text text="Title" />
+          </Column>
+          <Column>
+            <Text text="Email" />
+          </Column>
+          <Column>
+            <Text text="Manager" />
+          </Column>
+          <Column>
+            <Text text="Phone" />
+          </Column>
+        </columns>
+        <items>
+          <ColumnListItem>
+            <Text text="{firstname} {lastname}" />
+          </ColumnListItem>
+          <ColumnListItem>
+            <Text text="{title}" />
+          </ColumnListItem>
+        </items>
+      </Table>
     </content>
     <footer>
       <Bar design="Footer">
