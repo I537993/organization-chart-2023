@@ -9,11 +9,12 @@
       <Button text="onnavBack" press="onNavBack" />
     </headerContent>
     <content>
-      <Table alternateRowColors="true" items="{path : '/Us'}">
+      <Table id="adminTable" alternateRowColors="true" items="{path : '/Us'}">
         <headerToolbar>
           <Toolbar>
             <Title level="H2" text="Administration"></Title>
             <ToolbarSpacer></ToolbarSpacer>
+            <Button icon="sap-icon://add" press="onAdd"></Button>
             <Button icon="sap-icon://sort"></Button
             ><Button icon="sap-icon://filter"></Button
             ><Button icon="sap-icon://action-settings"></Button>

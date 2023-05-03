@@ -26,6 +26,10 @@ sap.ui.define(
 
       onSave: function () {
         this.getView().getModel().submitBatch("$auto")
+      },
+
+      onAdd: function () {
+        this.getView().byId('adminTable').getBinding("items").create()
       }
     });
 
