@@ -23,6 +23,11 @@ sap.ui.define(
           oRouter.navTo("home", {}, true);
         }
       },
+
+      onSave: function () {
+        this.getView().getModel().submitBatch("$auto")
+      }
     });
+
   }
 );
